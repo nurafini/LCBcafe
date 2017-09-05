@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LCBCafe.master.cs" Inherits="LCBcafewebsite.LCBCafe" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Welcome to LCB Cafe Website</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <img src="photos/lcblogo.png" alt="lcb logo" width="100" height="100"/>
+    <h1>Laksamana College of Business Cafe</h1>
+    <form id="form1" runat="server">
+       
+         <style>
+     ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: #2359c8;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial;
+    padding: 15px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #808080;
+}
+            </style>
+
+    <div>
+        
+   <ul>
+  <li><a href="Home.aspx">Home</a></li>
+  <li><a href="about.aspx">About</a></li>
+  <li><a href="gallery.aspx">Gallery</a></li>
+  <li><a href="signin.aspx">Sign In</a></li>
+  <li><a href="contact.aspx">Contact</a></li>
+</ul>
+       
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <footer>Laksamana College of Business Cafe © 2017</footer>
+</body>
+</html>
