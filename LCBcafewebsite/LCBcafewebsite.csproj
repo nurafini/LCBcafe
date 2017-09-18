@@ -161,6 +161,8 @@
     <Content Include="gallery.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="signin.aspx" />
+    <Content Include="uploadphoto.aspx" />
+    <Content Include="viewproduct.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +217,20 @@
       <DependentUpon>signin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup1.cs" />
+    <Compile Include="uploadphoto.aspx.cs">
+      <DependentUpon>uploadphoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uploadphoto.aspx.designer.cs">
+      <DependentUpon>uploadphoto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewproduct.aspx.cs">
+      <DependentUpon>viewproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewproduct.aspx.designer.cs">
+      <DependentUpon>viewproduct.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
