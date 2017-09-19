@@ -13,7 +13,7 @@ namespace LCBcafewebsite
         {
             string ID = Request.QueryString["ID"];
             string filename = ID + ".jpg";
-            productimage.ImageUrl = "~/images" + filename;
+            productimage.ImageUrl = "~/photos" + filename;
         }
     }
 }

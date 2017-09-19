@@ -11,9 +11,9 @@ namespace LCBcafewebsite
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string ID = Request.QueryString["ID"];
-            string filename = ID + ".jpg";
-            productimg.ImageUrl = "~/images" + filename;
+            string ProductID = Request.QueryString["ID"];
+            string filename = ProductID + ".jpg";
+            productimg.ImageUrl = "~/photos" + filename;
         }
 
         protected void BtnUpload_Click(object sender, EventArgs e)
