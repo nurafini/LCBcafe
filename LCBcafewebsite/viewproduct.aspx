@@ -6,9 +6,7 @@
     <br />
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="ID" DataSourceID="SqlDataSource1">
         <EditItemTemplate>
-            ID:
-            <asp:Label ID="IDLabel1" runat="server" Text='<%# Eval("ID") %>' />
-            <br />
+           
             Name:
             <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
             <br />
@@ -22,9 +20,7 @@
             &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </EditItemTemplate>
         <InsertItemTemplate>
-            ID:
-            <asp:TextBox ID="IDTextBox" runat="server" Text='<%# Bind("ID") %>' />
-            <br />
+           
             Name:
             <asp:TextBox ID="NameTextBox" runat="server" Text='<%# Bind("Name") %>' />
             <br />
@@ -38,9 +34,7 @@
             &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
         </InsertItemTemplate>
         <ItemTemplate>
-            ID:
-            <asp:Label ID="IDLabel" runat="server" Text='<%# Eval("ID") %>' />
-            <br />
+           
             Name:
             <asp:Label ID="NameLabel" runat="server" Text='<%# Bind("Name") %>' />
             <br />

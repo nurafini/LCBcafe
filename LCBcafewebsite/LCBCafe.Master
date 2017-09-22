@@ -8,12 +8,15 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
+   
 <body>
+   
     <img src="photos/lcblogo.png" alt="lcb logo" width="100" height="100"/>
     <h1>Laksamana College of Business Cafe</h1>
     <form id="form1" runat="server">
        
          <style>
+
      ul {
     list-style-type: none;
     margin: 0;
