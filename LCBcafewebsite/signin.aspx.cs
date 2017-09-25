@@ -19,7 +19,7 @@ namespace LCBcafewebsite
 
         protected void BtnReg_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("LCBcafe");
+            var identityDbContext = new IdentityDbContext("db_1626506_lcbcafe_dbConnectionString");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
             var roleStore = new RoleStore<IdentityRole>(identityDbContext);
@@ -28,8 +28,8 @@ namespace LCBcafewebsite
             IdentityResult result = manager.Create(user, PasswordReg.Text);
             if (result.Succeeded)
             {
-                IdentityRole endUserRole = new IdentityRole("endUser");
-                roleManager.Create(endUserRole);
+                IdentityRole enduserRole = new IdentityRole("endUser");
+                roleManager.Create(enduserRole);
                 Server.Transfer("Admin.aspx", true);
             }
             {
@@ -39,7 +39,7 @@ namespace LCBcafewebsite
 
         protected void BtnSignIn_Click(object sender, EventArgs e)
         {
-            var identityDbContext = new IdentityDbContext("LCBcafe");
+            var identityDbContext = new IdentityDbContext("db_1626506_lcbcafe_dbConnectionString");
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var userManager = new UserManager<IdentityUser>(userStore);
             var user = userManager.Find(TextBoxUNSignIn.Text, PasswordSignIn.Text);

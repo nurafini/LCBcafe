@@ -47,9 +47,9 @@
 
         </ItemTemplate>
     </asp:FormView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LCBcafe %>" SelectCommand="SELECT * FROM [Products] WHERE ([ID] = @ID)">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626506_lcbcafe_dbConnectionString %>" SelectCommand="SELECT * FROM [Products] WHERE ([ID] = @ID)">
         <SelectParameters>
-            <asp:QueryStringParameter DefaultValue="" Name="ID" QueryStringField="ID" Type="Int32" />
+            <asp:QueryStringParameter Name="ID" QueryStringField="ID" Type="Int32" />
         </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>

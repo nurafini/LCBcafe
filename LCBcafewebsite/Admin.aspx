@@ -13,7 +13,7 @@
             <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="uploadphoto.aspx?Id={0}" Text="upload photo" />
         </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:LCBcafe %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Products]" DeleteCommand="DELETE FROM [Products] WHERE [ID] = @original_ID" InsertCommand="INSERT INTO [Products] ([ID], [Name], [Description], [Price]) VALUES (@ID, @Name, @Description, @Price)" UpdateCommand="UPDATE [Products] SET [Name] = @Name, [Description] = @Description, [Price] = @Price WHERE [ID] = @original_ID">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626506_lcbcafe_dbConnectionString %>" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Products]" DeleteCommand="DELETE FROM [Products] WHERE [ID] = @original_ID" InsertCommand="INSERT INTO [Products] ([ID], [Name], [Description], [Price]) VALUES (@ID, @Name, @Description, @Price)" UpdateCommand="UPDATE [Products] SET [Name] = @Name, [Description] = @Description, [Price] = @Price WHERE [ID] = @original_ID">
         <DeleteParameters>
             <asp:Parameter Name="original_ID" Type="Int32" />
         </DeleteParameters>

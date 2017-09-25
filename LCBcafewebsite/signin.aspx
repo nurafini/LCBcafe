@@ -6,7 +6,7 @@
     <asp:TextBox ID="TextBoxUNSignIn" runat="server"></asp:TextBox>
     <br />
     Password:<br />
-    <asp:TextBox ID="PasswordSignIn" runat="server"></asp:TextBox>
+    <asp:TextBox ID="PasswordSignIn" runat="server" TextMode="Password"></asp:TextBox>
     <br />
     <asp:Button ID="BtnSignIn" runat="server" Text="Sign in" OnClick="BtnSignIn_Click" />
     <br />
@@ -18,7 +18,7 @@
     <asp:TextBox ID="TextBoxUNreg" runat="server"></asp:TextBox>
     <br />
     Password:<br />
-    <asp:TextBox ID="PasswordReg" runat="server"></asp:TextBox>
+    <asp:TextBox ID="PasswordReg" runat="server" TextMode="Password"></asp:TextBox>
     <br />
     <asp:Button ID="BtnReg" runat="server" Text="Register" OnClick="BtnReg_Click" />
     <br />
