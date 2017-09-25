@@ -3,7 +3,27 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<h1>About LCB's one and only Cafe</h1>
+    <style>
+        h1, h2{
+            text-align: center;
+            padding-left:inherit;
+            padding-right: inherit;
+            font-family: Calibri;
+            color: red;
+        }
+
+        p{
+            text-align: center;
+            padding-left: 400px;
+            padding-right: 400px;
+            font-family: Calibri;
+            color: mediumblue;
+            font-size: large;
+        }
+
+    </style>
+
+<h1>About LCB's One and Only Cafe</h1>
 
     <p>About Page
 
@@ -15,7 +35,7 @@ Our main objective is not only to serve stupendous and appetizing dishes to our 
 <h2>Our Location</h2>
 
     <p>Level 3, Plaza Abdul Razak, Jalan Laksamana Abdul Razak, Bandar Seri Begawan</p>
-    <div id="cafemap" style="width:900px;height:300px;"></div>
+    <div id="cafemap" style="width:600px;height:300px;"></div>
 
 <script>
 function mapCafe() {

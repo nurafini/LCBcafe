@@ -11,18 +11,23 @@
    
 <body>
    
-    <img src="photos/lcblogo.png" alt="lcb logo" width="100" height="100"/>
-    <h1>Laksamana College of Business Cafe</h1>
+    <img src="photos/lcblogo.jpg" width="450" height="250" class="centerlogo"/>
+    
     <form id="form1" runat="server">
        
          <style>
+  img.centerlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-     ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: auto;
-    background-color: #2359c8;
+    overflow: hidden;
+    background-color: royalblue;
 }
 
 li {
@@ -31,26 +36,39 @@ li {
 
 li a {
     display: block;
-    color: #ffffff;
+    color: azure;
     text-align: center;
-    font-family: Arial;
-    padding: 15px 18px;
+    padding: 15px 15px;
     text-decoration: none;
+    font-family: Calibri;
 }
 
-li a:hover {
-    background-color: #808080;
+li a:hover:not(.cursor) {
+    background-color: cornflowerblue;
 }
+
+.cursor {
+                 background-color: darkblue;
+}
+
+footer {
+    background-color: royalblue;
+    text-align: center;
+    font-family: Calibri;
+    color: white;
+    font-size: large;
+}
+   
             </style>
 
     <div>
         
    <ul>
-  <li><a href="Home.aspx">Home</a></li>
-  <li><a href="about.aspx">About</a></li>
-  <li><a href="gallery.aspx">Gallery</a></li>
-  <li><a href="signin.aspx">Sign In</a></li>
-  <li><a href="contact.aspx">Contact</a></li>
+  <li><a href="Home.aspx">HOME</a></li>
+  <li><a href="about.aspx">ABOUT</a></li>
+  <li><a href="gallery.aspx">GALLERY</a></li>
+  <li><a href="signin.aspx">SIGN IN</a></li>
+  <li style="float:right"><a class="cursor" href="contact.aspx">CONTACT</a></li>
 </ul>
        
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

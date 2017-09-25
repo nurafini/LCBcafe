@@ -4,10 +4,19 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <style>
+
+        h1, h2{
+            text-align: center;
+            padding-left:inherit;
+            padding-right: inherit;
+            font-family: Calibri;
+            color: red;
+        }
+
     * {box-sizing:border-box}
 
 .galleryslideshow {
-  width: 1000px;
+  width: inherit;
   position: relative;
   margin: auto;
 }
@@ -93,7 +102,7 @@ div.gallerypage img {
     <img src="photos/sushi.jpg" width="300" height="200">
   </a>
 
-  <a href="">
+  <a href="viewproduct.aspx?Id=3">
     <img src="photos/nugget.jpg" width="300" height="200">
   </a>
 
