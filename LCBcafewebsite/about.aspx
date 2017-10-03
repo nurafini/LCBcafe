@@ -5,19 +5,17 @@
 
     <style>
         h1, h2{
-            text-align: center;
-            padding-left:inherit;
-            padding-right: inherit;
+            text-align: left;
+            padding-right: 500px;
             font-family: Calibri;
             color: red;
         }
 
         p{
-            text-align: center;
-            padding-left: 400px;
-            padding-right: 400px;
+            text-align: left;
+            padding-right: 500px;
             font-family: Calibri;
-            color: mediumblue;
+            color: darkblue;
             font-size: large;
         }
 
@@ -50,5 +48,73 @@ marker.setMap(map);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARAFlBpOcUBOoBY9S4LX9M1GdFzPyMGKQ&callback=mapCafe"></script>
+
+    <h2>Our Menu</h2>
+
+    <style>
+    * {box-sizing:border-box}
+
+.galleryslideshow {
+  width: inherit;
+  position: relative;
+  margin: auto;
+}
+
+.slideshowphoto {
+    display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+           
+</style>
+
+     <div class="galleryslideshow">
+
+        <div class="slideshowphoto">
+    <img src="photos/menu1.jpg" style="width:500px; height:720px;">
+  </div>
+
+        <div class="slideshowphoto">
+    <img src="photos/menu2.jpg" style="width:500px; height:720px;">
+  </div>
+
+        <div class="slideshowphoto">
+    <img src="photos/menu3.jpg" style="width:500px; height:720px;">
+  </div>
+
+        <div class="slideshowphoto">
+    <img src="photos/menu4.jpg" style="width:500px; height:720px;">
+  </div>
+
+         <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slideshowphoto");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000);
+}</script>
 
 </asp:Content>

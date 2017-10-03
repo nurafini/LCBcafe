@@ -33,27 +33,32 @@
   from {opacity: .4} 
   to {opacity: 1}
 }
+           
 </style>
 
-    <div class="galleryslideshow">
+     <div class="galleryslideshow">
 
         <div class="slideshowphoto">
-    <img src="photos/IMG_2033.jpg" style="width:100%">
+    <img src="photos/IMG_2033.jpg" style="width:100%; height:500px;">
   </div>
 
         <div class="slideshowphoto">
-    <img src="photos/IMG_2034.jpg" style="width:100%">
+    <img src="photos/IMG_2034.jpg" style="width:100%; height:500px;">
   </div>
 
         <div class="slideshowphoto">
-    <img src="photos/IMG_2040.jpg" style="width:100%">
+    <img src="photos/IMG_2040.jpg" style="width:100%; height:500px;">
   </div>
 
         <div class="slideshowphoto">
-    <img src="photos/IMG_2046.jpg" style="width:100%">
+    <img src="photos/IMG_2046.jpg" style="width:100%; height:500px;">
   </div>
 
-        <script>
+        <div class="slideshowphoto">
+    <img src="photos/banner.jpg" style="width:100%; height:500px;">
+  </div>
+
+         <script>
         var slideIndex = 0;
 showSlides();
 
@@ -66,11 +71,12 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 2500);
+    setTimeout(showSlides, 2000);
 }</script>
 
+
         <style>
-            h1, h2{
+             h1{
                 text-align: center;
                 padding-left: inherit;
                 padding-right: inherit;
@@ -90,12 +96,17 @@ function showSlides() {
 
         <h1>Welcome to LCB Cafe!</h1>
 
-        <p>LCB Café is a modern halal restaurant that is suitable for all. We provide healthy food with
-no MSG to our valuable customers. What’s more, we cater for customers who have
-special dietary requirements.</p>
-
-        <h2>Our Culture is to served foods with:<br />•LESS Sugar<br />•LESS Oil<br />•LESS Salt<br />•Strictly NO MSG</h2>
+        <p>LCB Café is a modern halal café which is located in Laksamana college of Business. We
+provide healthy foods and beverages to our valuable customers. Other than that, we also
+provide certain dietary foods to those who have dietary requirement. Regarding the cost, we
+make sure that cost is low as the majority of our customers are students. Our café is also great
+for meetings purposes.</p>
 
         <p>Opening Hours: 9 AM to 7 PM</p>
 
+        <p>The Staffs:<br />
+        •Morning hours 1 staff<br />
+        •Afternoon 2 staff (as a lot of students will come more during lunch hours)<br />
+        •Evening 1 staff</p>
+        
 </asp:Content>
